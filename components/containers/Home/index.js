@@ -3,7 +3,7 @@ import React from 'react'
 // Components
 import { Box, Text} from '@chakra-ui/react';
 import Image from 'next/image';
-
+import Nav from '../../../components/containers/Home/Nav/index';
 
 
 // Assets 
@@ -16,11 +16,9 @@ function index() {
 <Box sx={styles.leftContainer} bg={pixelBg}>
 <Text as='h1'>The</Text>
 <Text as='h1'><span>Lighthouse</span></Text>
-
-
 </Box>
 <Box sx={styles.rightContainer}>
-
+<Nav/>
 
 
 </Box>
