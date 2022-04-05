@@ -19,7 +19,7 @@ function index() {
 </Box>
 
 <Box sx={styles.bottom}>
-Copyright @2021 The LightHouse Project. All Rights Reserved.
+Copyright @2021 The Lighthouse Project. All Rights Reserved.
 </Box>
      </Box>
     )
