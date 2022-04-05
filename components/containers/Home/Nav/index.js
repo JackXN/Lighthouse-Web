@@ -32,7 +32,7 @@ const styles = {
         height: '100vh',
     },
     listContainer: {
-        mt: [null, null, '80px', null,'165px'],
+        mt: ['-325px', null, '80px', null,'165px'],
         listStyle:'none',
         display: 'flex',
         flexDirection: 'column',

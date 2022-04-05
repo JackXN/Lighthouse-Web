@@ -73,7 +73,7 @@ const styles = {
         color: 'white',
         fontSize: ['60px', '60px', '90px','130px'],
         fontWeight: 'bold',
-        mt: ['270px', '270px', '0px'],
+        mt: ['25px', '25px', '0px'],
         ml:['0px', '0px','25px', '50px'],
         position: [null, null,null, 'relative'],
         left: ['35px', '130px'],
