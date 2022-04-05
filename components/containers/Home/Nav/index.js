@@ -10,7 +10,7 @@ function index() {
     <Box sx={styles.container}>     
     <UnorderedList sx={styles.listContainer}>
         <ListItem sx={styles.listItem}>
-            <Link to='/events'>Events</Link>
+            <Link to='/events'>Play</Link>
         </ListItem>
         <Divider width='20px' alignSelf='center' color='yellow'/>
         <ListItem sx={styles.listItem}>
@@ -42,7 +42,6 @@ const styles = {
         margin: ['20px'],
         fontFamily: 'VT323',
         fontSize: ['25px', '25px', '25px', '30px'],
-
     }
 }
 

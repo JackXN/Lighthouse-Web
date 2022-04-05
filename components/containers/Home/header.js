@@ -18,7 +18,7 @@ const styles = {
         bottom: ['250px'],
         flexDirection:'column',
         fontFamily: 'VT323',
-        fontSize: '15px',
+        fontSize: '18px',
         color: '#585353'
     }
 }
