@@ -44,10 +44,11 @@ const styles = {
         justifyContent: 'center',
         display: 'flex',
         alignItems: 'center',
-        backgroundImage: 'url(/backgroundImg.png)',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat', 
+        backgroundImage: ['url(/mobileBg.png)','url(/backgroundImg.png)'],
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: 'black',
+        backgroundPosition: 'top',
+        mt: '50px',
 
       span: {
           ml: ['35px'],
@@ -61,7 +62,8 @@ const styles = {
         color: 'white',
         fontSize: ['60px'],
         fontWeight: 'bold',
-        mt: ['325px']
+        mt: ['270px'],
+        
     },
     theContainer: {
         mr: ['193px']
