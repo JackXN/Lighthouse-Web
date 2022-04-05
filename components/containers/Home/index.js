@@ -42,7 +42,7 @@ const styles = {
         backgroundColor: 'black',
         display: 'flex',
         flexDirection: ['column', 'column', 'row', 'row'],
-        // overflowX: 'hidden',
+        overflowX: 'hidden',
         justifyContent: 'center',
         alignItems: ['center','start']
     },
