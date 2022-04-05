@@ -14,7 +14,7 @@ function index() {
         </ListItem>
         <Divider width='20px' alignSelf='center' color='yellow'/>
         <ListItem sx={styles.listItem}>
-            <Link to='/roadmap'>RoadMap</Link>
+            <Link to='/roadmap'>Gallery</Link>
         </ListItem>
         <Divider width='20px' alignSelf='center' color='yellow'/>
         <ListItem sx={styles.listItem}>
@@ -32,7 +32,7 @@ const styles = {
         height: '100vh',
     },
     listContainer: {
-        mt: [null, null, '150px', '230px'],
+        mt: [null, null, '80px', null,'165px'],
         listStyle:'none',
         display: 'flex',
         flexDirection: 'column',

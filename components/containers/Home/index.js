@@ -4,6 +4,8 @@ import React from 'react'
 import { Box, Text} from '@chakra-ui/react';
 import Image from 'next/image';
 import Nav from '../../../components/containers/Home/Nav/index';
+import Header from '../Home/header';
+import Footer from '../Footer/index';
 
 
 // Assets 
@@ -12,6 +14,7 @@ import {HiOutlineArrowSmDown as DownArrow} from 'react-icons/hi';
 
 function index() {
     return (
+        <>
  <Box sx={styles.container}>
 <Box sx={styles.leftContainer} bg={pixelBg}>
 <Box sx={styles.textContainer}>
@@ -23,19 +26,25 @@ function index() {
     <DownArrow color='white' fontSize='30px' style={{display: ['none']}} />
 </Box>
 <Box sx={styles.rightContainer}>
+<Header/>
 <Nav/>
 </Box>
  </Box>
+ 
+ </>
     )
 }
 
 const styles = {
     container: {
-        height: '200vh',
+        height: '100%',
         width: '100%',
         backgroundColor: 'black',
         display: 'flex',
         flexDirection: ['column', 'column', 'row', 'row'],
+        // overflowX: 'hidden',
+        justifyContent: 'center',
+        alignItems: ['center','start']
     },
     leftContainer: {
         height: ['100vh'],
@@ -72,8 +81,10 @@ const styles = {
         
     },
     theContainer: {
-        mr: ['193px', '193px', '350px','600px'],
-        mt:[null, null,null, '50px']
+        mr: ['193px', '193px', '350px','480px'],
+        mt:[null, null,null,],
+        position: [null, null, 'relative', 'relative'],
+        top: [null,'20px', null, '50px' ]
     },
 
 
@@ -86,6 +97,7 @@ const styles = {
         textAlign: 'center',
         alignItems: 'center',
         justifyContent: 'center',
+        flexDirection:'column'
 
     },
  
