@@ -29,9 +29,10 @@ function index() {
 
 const styles = {
     container: {
-        height: '100vh'
+        height: '100vh',
     },
     listContainer: {
+        mt: [null, null, '150px', '230px'],
         listStyle:'none',
         display: 'flex',
         flexDirection: 'column',
@@ -40,7 +41,7 @@ const styles = {
     listItem: {
         margin: ['20px'],
         fontFamily: 'VT323',
-        fontSize: '25px',
+        fontSize: ['25px', '25px', '25px', '30px'],
 
     }
 }

@@ -14,13 +14,13 @@ function index() {
     return (
  <Box sx={styles.container}>
 <Box sx={styles.leftContainer} bg={pixelBg}>
-    <Box sx={styles.textContainer}>
+<Box sx={styles.textContainer}>
 <Text as='h1' sx={styles.theContainer}>The</Text>
 <Text as='h1'><span>Lighthouse</span></Text>
 </Box>
 </Box>
 <Box sx={styles.arrowContainer} display='flex' alignItems='center' justifyContent='center' mt='25px'>
-    <DownArrow color='white' fontSize='30px' />
+    <DownArrow color='white' fontSize='30px' style={{display: ['none']}} />
 </Box>
 <Box sx={styles.rightContainer}>
 <Nav/>
@@ -35,47 +35,60 @@ const styles = {
         width: '100%',
         backgroundColor: 'black',
         display: 'flex',
-        flexDirection: ['column', 'column', 'column', 'row'],
+        flexDirection: ['column', 'column', 'row', 'row'],
     },
     leftContainer: {
-        height: '200vh',
+        height: ['100vh'],
+        width: '700px',
         backgroundColor: 'gray',
         textAlign: 'center', 
         justifyContent: 'center',
         display: 'flex',
         alignItems: 'center',
-        backgroundImage: ['url(/mobileBg.png)','url(/backgroundImg.png)'],
+        backgroundImage: ['url(/mobileBg.png)','url(/mobileBg.png)', 'url(/backgroundImg.png)'],
         backgroundRepeat: 'no-repeat',
+        backgroundSize: [null, null, 'cover'],
         backgroundColor: 'black',
-        backgroundPosition: 'top',
-        mt: '50px',
+        backgroundPosition: ['top'],
+        mt: ['50px', '50px', '0px'],
 
       span: {
           ml: ['35px'],
           position: 'relative',
-          bottom: ['32px']
-      }
-
+          bottom: ['32px'],
+          
+      },
     },
     textContainer: {
         fontFamily: 'VT323',
         color: 'white',
-        fontSize: ['60px'],
+        fontSize: ['60px', '60px', '90px','130px'],
         fontWeight: 'bold',
-        mt: ['270px'],
+        mt: ['270px', '270px', '0px'],
+        ml:['0px', '0px','25px', '50px'],
+        position: [null, null,null, 'relative'],
+        left: ['35px', '130px'],
+        
         
     },
     theContainer: {
-        mr: ['193px']
+        mr: ['193px', '193px', '350px','600px'],
+        mt:[null, null,null, '50px']
     },
 
 
     rightContainer: {
-        height: '100%',
+        height: '100vh',
         color: 'white',
-        mt: ['100px'],
-        background: 'black',
+        width: '100%',
+        mt: ['100px', '100px', '300px'],
+        display: 'flex',
+        textAlign: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+
     },
+ 
 
 }
 
