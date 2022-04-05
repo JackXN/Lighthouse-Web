@@ -3,14 +3,46 @@ import React from 'react'
 
 // Components
 import {Box, UnorderedList, ListItem, Text, Link} from '@chakra-ui/react';
-
+import { Divider } from '@chakra-ui/react'
 
 function index() {
     return (
-        <div>
-            
-        </div>
+    <Box sx={styles.container}>     
+    <UnorderedList sx={styles.listContainer}>
+        <ListItem sx={styles.listItem}>
+            <Link to='/events'>Events</Link>
+        </ListItem>
+        <Divider width='20px' alignSelf='center' color='yellow'/>
+        <ListItem sx={styles.listItem}>
+            <Link to='/roadmap'>RoadMap</Link>
+        </ListItem>
+        <Divider width='20px' alignSelf='center' color='yellow'/>
+        <ListItem sx={styles.listItem}>
+            <Link to='/readmore'>Read More</Link>
+        </ListItem>
+    </UnorderedList>
+    </Box>
     )
+}
+
+
+
+const styles = {
+    container: {
+        height: '100vh'
+    },
+    listContainer: {
+        listStyle:'none',
+        display: 'flex',
+        flexDirection: 'column',
+        textAlign: 'center',
+    },
+    listItem: {
+        margin: ['20px'],
+        fontFamily: 'VT323',
+        fontSize: '25px',
+
+    }
 }
 
 export default index

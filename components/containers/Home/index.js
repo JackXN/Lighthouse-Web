@@ -14,18 +14,17 @@ function index() {
     return (
  <Box sx={styles.container}>
 <Box sx={styles.leftContainer} bg={pixelBg}>
-<Text as='h1'>The</Text>
+    <Box sx={styles.textContainer}>
+<Text as='h1' sx={styles.theContainer}>The</Text>
 <Text as='h1'><span>Lighthouse</span></Text>
+</Box>
 </Box>
 <Box sx={styles.rightContainer}>
 <Nav/>
-
-
 </Box>
  </Box>
     )
 }
-
 
 const styles = {
     container: {
@@ -36,9 +35,9 @@ const styles = {
         flexDirection: ['column', 'column', 'column', 'row'],
     },
     leftContainer: {
-        height: '60vh',
+        height: '70vh',
         backgroundColor: 'gray',
-        textAlign: 'center',
+        textAlign: 'center', 
         justifyContent: 'center',
         display: 'flex',
         alignItems: 'center',
@@ -48,30 +47,28 @@ const styles = {
         backgroundRepeat: 'no-repeat', 
 
         h1: {
-            margin: '2px',
             color: '#ffff',
             fontFamily: 'VT323',
             fontWeight: 'bold',
             // font-family: 'Press Start 2P',
             fontSize: ['55px'],
             mt: [
-                '450px',
-
+                '320px',
             ],
-            ml: ['10px']
-            
-
+            ml: ['10px'],
         },
         span: {
             position: 'relative',
             top: ['55px'],
             right: ['25px']
-        }
-      
+        },
 
     },
     rightContainer: {
-
+        height: '100%',
+        color: 'white',
+        mt: ['100px'],
+        background: 'black',
     },
 
 }
