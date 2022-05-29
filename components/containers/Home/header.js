@@ -4,7 +4,7 @@ import {Box, StylesProvider, Text} from '@chakra-ui/react';
 function header() {
     return (
       <Box sx={styles.container}>
-          <Text as='h3'>Written By Ruben Aguilar</Text>
+          <Text as='h3'>Written By Ruben Ruben</Text>
           <Text as='h3'>Developed By Jack Rigan</Text>
       </Box>
     )
