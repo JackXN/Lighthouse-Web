@@ -15,11 +15,11 @@ function index() {
 <Image src={PixelChar} height='50px' width='50px'/>
 
 <Box sx={styles.comingSoon}>
-<Text as='h2'>Coming Soon <Image src={PixelHeart} height='20px' width='20px'/></Text>
+<Text as='h2'>Coming August 2023 <Image src={PixelHeart} height='20px' width='20px'/></Text>
 </Box>
 
 <Box sx={styles.bottom}>
-Copyright @2021 The Lighthouse Project. All Rights Reserved.
+Copyright @2023 The Lighthouse Project. All Rights Reserved.
 </Box>
      </Box>
     )
